@@ -1,0 +1,64 @@
+/* ========== MAIN ================= */
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+
+  .hero {
+    max-width: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .section-work {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .strategy-box {
+    display: none;
+    justify-content: center;
+  }
+
+  .strategy-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+  }
+
+  .title-small {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .section-work {
+    display: none;
+  }
+
+  .our-team-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+    width: 264px;
+  }
+  .customers-list {
+    flex-wrap: wrap;
+  }
+  .customer-item:nth-child(2n+1) {
+  flex-wrap: wrap;
+  margin-right: 16px;
+  margin-bottom: 76px;
+  /* ++++++++++++ */
+}

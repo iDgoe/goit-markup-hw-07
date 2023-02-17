@@ -1,0 +1,76 @@
+@media screen and (min-width: 1143px) {
+  .container {
+    width: 1200px;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  /* =========HEADER============ */
+  /* =========/HEADER============ */
+
+  /* ========== MAIN ================= */
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 48px;
+  }
+
+  .strategy-box {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .hero-btn {
+    padding: 16px 32px;
+  }
+  .section-work {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .strategy-block {
+    padding-top: 120px;
+  }
+
+  .strategy-box {
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--btn-white-color);
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .strategy-list {
+    gap: 24px;
+  }
+
+  .title-small {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .customer-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  /* ++++++++++++ */
+}
