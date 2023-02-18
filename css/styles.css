@@ -90,7 +90,6 @@ button {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--body-color);
-  margin-right: 76px;
 }
 
 .header-container {
@@ -177,17 +176,9 @@ button {
   padding-top: 120px;
 }
 
-/* .strategy-item:not(:last-child) {
-  margin-right: 24px;
-} */
-
 .block {
   padding-top: 0px;
 }
-
-/* .block:not(:last-child) {
-  margin-right: 24px;
-} */
 
 .our-team-item {
   padding-top: 0px;
@@ -239,11 +230,6 @@ button {
   }
 }
 
-.section-work {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .section-cards {
   padding-bottom: 120px;
 }
@@ -259,7 +245,6 @@ button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -286,14 +271,11 @@ button {
 }
 
 .strategy-box {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 264px;
   height: 112px;
   background-color: var(--btn-white-color);
-  margin-bottom: 8px;
-  border-radius: 4px;
 }
 
 .our-team {
@@ -377,6 +359,13 @@ button {
   color: var(--text-color);
 }
 
+.text-team {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-align: center;
+}
+
 .text-footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -403,34 +392,24 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-text-btn-color);
-  margin-bottom: 16px;
 }
 
 .footer-wrap {
   display: flex;
   align-items: baseline;
 }
-.footer-subscribe {
-  margin-left: 80px;
-}
 
 .footer-subscribe-text {
   font-weight: 500;
   color: var(--white-text-btn-color);
-  margin-bottom: 16px;
 }
 
 .footer-input-subscribe {
   display: flex;
 }
 
-.footer-form-title {
-  margin-bottom: 16px;
-}
-
 .footer-box {
   width: 264px;
-  /* margin-right: 120px; */
 }
 
 .footer-form-wraper {
@@ -439,7 +418,7 @@ button {
 
 .footer-form-input {
   width: 264px;
-  height: 40px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--white-text-btn-color);
   border-radius: 4px;
@@ -475,7 +454,7 @@ button {
   position: relative;
   font-family: inherit;
   font-weight: 500;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   height: 40px;
   padding: 8px 64px 8px 24px;
   color: var(--white-text-btn-color);
@@ -490,7 +469,6 @@ button {
 .subscribe-icon {
   position: absolute;
   float: right;
-  margin-left: 16px;
 }
 
 .footer-modal-btn:hover,
@@ -514,10 +492,6 @@ button {
   width: 168px;
   height: 88px;
 }
-
-/* .customer-item:not(:last-child) {
-  margin-right: 24px;
-} */
 
 .customer-logo {
   display: flex;
@@ -697,6 +671,14 @@ button {
 .footer-social-list {
   display: flex;
   gap: 16px;
+}
+
+.footer-media {
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-text {
+  margin-bottom: 16px;
 }
 
 /* +++++++++++++++++++++++++ */
@@ -931,5 +913,13 @@ button {
   color: var(--btn-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+.menu-open {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open-icon {
+  fill: var(--body-color);
 }

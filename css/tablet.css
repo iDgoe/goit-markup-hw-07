@@ -1,25 +1,11 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
   }
 
   .header-container {
     display: flex;
     align-items: flex-end;
-  }
-
-  .logo {
-    margin: 26px 16px;
   }
 
   .nav-list {
@@ -54,31 +40,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/people-office-mobile-1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero/people-office-mobile-2x.jpg);
-    }
-  }
-
-  .hero {
-    padding-top: 112px;
-    padding-bottom: 108px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
       url(../images/hero/people-office-tablet-1x.jpg);
-    max-width: 1440px;
-    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -112,8 +74,10 @@
   }
 
   .strategy-list {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 0px;
   }
 
   .strategy-box {
@@ -122,42 +86,24 @@
 
   .strategy-item {
     flex-basis: calc((100% - 24px) / 2);
+    justify-content: space-between;
   }
 
   .strategy-item:nth-child(1) {
     margin-bottom: 72px;
   }
 
-  .our-team-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .our-team-list:last-child {
-    margin-bottom: 128px;
-  }
-
-  .work-lisl {
-    flex-wrap: wrap;
-  }
-
-  .footer-wrap {
-    flex-wrap: wrap;
-  }
-
-  .footer-input-subscribe {
-    flex-wrap: wrap;
-  }
-
-  .customers-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+  .our-team-list:nth-child(1) {
+    margin-bottom: 64px;
   }
 
   .customers-list {
-    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .customer-item:nth-child(2n + 1) {
+    margin-right: 0px;
   }
 
   .customer-item:nth-child(3n + 2) {
@@ -169,83 +115,26 @@
     margin-bottom: 72px;
   }
 
-  .customer-logo-icon {
-    flex-wrap: wrap;
-  }
-
   .title-strategy {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  .title-small {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
   }
 
   .text {
     text-align: left;
   }
 
-  .footer {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
-  .logo-footer {
-    text-align: center;
-  }
-
   .footer-box {
     margin-left: 108px;
-    margin-bottom: 72px;
   }
 
   .footer-subscribe {
     margin-left: 108px;
+    text-align: left;
   }
 
   .media {
     margin-left: 24px;
     text-align: left;
-  }
-
-  .text-footer {
-    text-align: left;
-  }
-
-  .logo-footer {
-    text-align: center;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-  }
-
-  .title-small {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    color: var(--body-color);
-    text-decoration: none;
-  }
-
-  .text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
   }
 
   .footer-box {
@@ -254,5 +143,10 @@
 
   .footer-form-input {
     width: 264px;
+    margin-right: 24px;
+  }
+
+  .footer-modal-btn {
+    margin-top: 0px;
   }
 }
