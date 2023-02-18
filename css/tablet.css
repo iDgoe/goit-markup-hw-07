@@ -1,6 +1,6 @@
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 320px;
+    width: 768px;
   }
 
   .center {
@@ -13,45 +13,119 @@
     height: auto;
   }
 
+  .header-container {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .logo {
     margin: 26px 16px;
   }
 
   .nav-list {
-    display: none;
+    display: flex;
+    gap: 40px;
+    margin-left: 123px;
   }
 
   .adress-list {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .adress {
+    display: flex;
+    margin-left: 118px;
+  }
+
+  .contact-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
   }
 
   .hero {
     max-width: 100%;
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-mobile-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-mobile-2x.jpg);
+    }
+  }
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-tablet-1x.jpg);
+    max-width: 1440px;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tablet-2x.jpg);
+    }
   }
 
   .hero-title {
-    font-size: 36px;
-    width: 100%;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 40px;
   }
 
   .section-work {
     display: none;
   }
 
-  .strategy-list {
-    flex-direction: column;
-    justify-content: center;
-    gap: 72px;
+  .strategy-block {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
-  .strategy-list:last-child {
-    margin-bottom: 96px;
+  .strategy-list {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .strategy-box {
     display: none;
+  }
+
+  .strategy-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .strategy-item:nth-child(1) {
+    margin-bottom: 72px;
   }
 
   .our-team-list {
@@ -77,17 +151,32 @@
     flex-wrap: wrap;
   }
 
+  .customers-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .customers-list {
     flex-wrap: wrap;
   }
 
-  .customer-item:nth-child(2n + 1) {
-    margin-right: 16px;
-    margin-bottom: 76px;
+  .customer-item:nth-child(3n + 2) {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .customer-item:nth-child(2) {
+    margin-bottom: 72px;
   }
 
   .customer-logo-icon {
     flex-wrap: wrap;
+  }
+
+  .title-strategy {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
   }
 
   .title-small {
@@ -102,12 +191,9 @@
     text-align: left;
   }
 
-  .footer-wrap {
-    flex-wrap: wrap;
-  }
-
-  .footer-input-subscribe {
-    flex-direction: column;
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .logo-footer {
@@ -115,33 +201,17 @@
   }
 
   .footer-box {
+    margin-left: 108px;
     margin-bottom: 72px;
-  }
-
-  .media {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-    text-align: center;
   }
 
   .footer-subscribe {
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-left: 108px;
   }
 
-  .footer-input-subscribe {
-    align-items: center;
-  }
-
-  .footer-modal-btn {
-    margin-top: 16px;
-    width: 165px;
-  }
-  .footer-input-subscribe {
-    display: inline;
+  .media {
+    margin-left: 24px;
+    text-align: left;
   }
 
   .text-footer {
@@ -179,17 +249,10 @@
   }
 
   .footer-box {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-form-input {
-    width: 100%;
-  }
-
-  .footer-modal-btn {
-    margin-left: auto;
-    margin-right: auto;
+    width: 264px;
   }
 }

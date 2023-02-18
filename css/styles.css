@@ -177,17 +177,17 @@ button {
   padding-top: 120px;
 }
 
-.strategy-item:not(:last-child) {
+/* .strategy-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 .block {
   padding-top: 0px;
 }
 
-.block:not(:last-child) {
+/* .block:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 .our-team-item {
   padding-top: 0px;
@@ -361,6 +361,16 @@ button {
   text-decoration: none;
 }
 
+.title-strategy {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--body-color);
+  text-decoration: none;
+}
+
 .text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -420,7 +430,7 @@ button {
 
 .footer-box {
   width: 264px;
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-form-wraper {
@@ -505,9 +515,9 @@ button {
   height: 88px;
 }
 
-.customer-item:not(:last-child) {
+/* .customer-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 .customer-logo {
   display: flex;
