@@ -96,8 +96,13 @@
     margin-bottom: 72px;
   }
 
-  .our-team-list:nth-child(1) {
+  /* .our-team-list:nth-child(1) {
     margin-bottom: 64px;
+  } */
+
+  .our-team-list {
+    row-gap: 64px;
+    column-gap: 24px;
   }
 
   .customers-list {
