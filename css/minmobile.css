@@ -1,6 +1,6 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .container {
-    width: 480px;
+    width: 100%;
   }
 
   .center {
@@ -14,7 +14,7 @@
   }
 
   .logo {
-    margin: 26px 16px;
+    margin: 26px 4px;
   }
 
   .nav-list {
@@ -26,6 +26,7 @@
   }
 
   .hero {
+    display: flex;
     max-width: 100%;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -49,8 +50,8 @@
   }
 
   .hero-title {
-    font-size: 36px;
-    width: 320px;
+    font-size: 24px;
+    width: 240px;
   }
 
   .section-work {
@@ -58,6 +59,7 @@
   }
 
   .strategy-list {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 72px;
@@ -77,8 +79,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  .our-team-list:last-child {
+  s .our-team-list:last-child {
     margin-bottom: 128px;
   }
 
@@ -94,19 +95,22 @@
     flex-wrap: wrap;
   }
 
+  .customers-list {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .customers-section {
     padding-top: 96px;
     padding-bottom: 96px;
+    display: flex;
+    margin: auto;
   }
 
-  .customers-list {
-    flex-wrap: wrap;
-  }
-
-  .customer-item:nth-child(2n + 1) {
+  /* .customer-item:nth-child(2n + 1) {
     margin-right: 16px;
     margin-bottom: 76px;
-  }
+  } */
 
   .customer-logo-icon {
     flex-wrap: wrap;
@@ -114,14 +118,16 @@
 
   .title-strategy {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .text {
     text-align: left;
+    width: 100%;
   }
 
   .footer-wrap {
@@ -176,7 +182,7 @@
 
   .title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -213,5 +219,9 @@
   .footer-modal-btn {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .block {
+    width: 100px;
   }
 }
