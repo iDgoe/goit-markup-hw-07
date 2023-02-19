@@ -12,6 +12,10 @@
     justify-content: center;
   }
 
+  .text {
+    font-weight: 400;
+  }
+
   .nav-list {
     margin-left: 0px;
   }
@@ -83,6 +87,11 @@
 
   .block {
     flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .section-work {

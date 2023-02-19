@@ -1,8 +1,8 @@
 @media screen and (max-width: 479px) {
   .container {
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .center {
@@ -55,7 +55,9 @@
     font-size: 24px;
     width: 240px;
   }
-
+  .text {
+    font-weight: 500;
+  }
   .section-work {
     display: none;
   }
@@ -70,10 +72,6 @@
   .strategy-block {
     padding-top: 96px;
     padding-bottom: 96px;
-  }
-
-  .strategy-list:last-child {
-    margin-bottom: 96px;
   }
 
   .strategy-box {

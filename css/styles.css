@@ -946,6 +946,7 @@ button {
   top: 0;
   position: fixed;
   padding: 80px 40px 40px 40px;
+  z-index: 5;
 }
 
 .mob-close-btn {
