@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,12 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/minmobile.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
@@ -29,12 +34,10 @@
           >
           <ul class="list nav-list">
             <li>
-              <a class="menu-link link" href="./index.html">Studio</a>
+              <a class="menu-link link active" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="menu-link link active" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
               <a class="menu-link link" href="">Contacts</a>
@@ -56,9 +59,91 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- +++++++++++++++++-==================MENU====================+++++++++++++++++++++++++++++ -->
+
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-close-btn" data-menu-close>
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="list mob-nav-list">
+            <li>
+              <a class="mob-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div>
+          <address class="mob-adress">
+            <ul class="list mob-adress-list">
+              <li>
+                <a class="mob-contact-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mob-contact-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mob-social-list list">
+              <li>
+                <a class="social-list-link" href="">
+                  <svg class="social-list-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-list-link" href="">
+                  <svg class="social-list-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-list-link" href="">
+                  <svg class="social-list-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-list-link" href="">
+                  <svg class="social-list-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-
     <!-- /* ========= /HEADER ============ */-->
 
     <!--  /* ========= MAIN  ============ */ -->
@@ -337,5 +422,90 @@
       </div>
     </footer>
     <!-- /* ========= /FOOTER ============ */ -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <!-- is-hidden -->
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+        <p class="modal-form-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Name </span>
+            <span class="modal-form-wraper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+$"
+                minlength="2"
+              />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Phone </span>
+            <span class="modal-form-wraper">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Email </span>
+            <span class="modal-form-wraper">
+              <input
+                type="email"
+                name="user_email"
+                class="modal-form-input"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Comment </span>
+            <textarea
+              name="user-message"
+              cols="30"
+              rows="10"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user-policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-desk">
+            I accept the terms and conditions of the&nbsp;
+            <a class="modal-policy link" href=""> Privacy Policy</a>
+          </label>
+          <button type="submit" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

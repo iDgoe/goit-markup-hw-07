@@ -17,6 +17,10 @@
     margin: 24px 16px;
   }
 
+  .text {
+    font-weight: 500;
+  }
+
   .nav-list {
     display: none;
   }
@@ -80,10 +84,6 @@
     gap: 72px;
   }
 
-  .our-team-list:last-child {
-    margin-bottom: 128px;
-  }
-
   .work-lisl {
     flex-wrap: wrap;
   }
@@ -103,11 +103,8 @@
 
   .customers-list {
     flex-wrap: wrap;
-  }
-
-  .customer-item:nth-child(2n + 1) {
-    margin-right: 16px;
-    margin-bottom: 76px;
+    row-gap: 72px;
+    column-gap: 16px;
   }
 
   .customer-logo-icon {
@@ -216,5 +213,10 @@
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+
+  .modal {
+    width: 392px;
+    height: 586px;
   }
 }

@@ -68,7 +68,6 @@
 
   .strategy-list {
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: nowrap;
     gap: 24px;
   }
@@ -157,9 +156,5 @@
 
   .footer-form-title {
     margin-bottom: 16px;
-  }
-
-  .subscribe-icon {
-    margin-left: 16px;
   }
 }

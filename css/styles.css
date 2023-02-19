@@ -58,7 +58,7 @@ img {
 }
 
 .container {
-  width: 1158px; /* desktop */
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -469,6 +469,7 @@ button {
 .subscribe-icon {
   position: absolute;
   float: right;
+  margin-left: 16px;
 }
 
 .footer-modal-btn:hover,
@@ -479,8 +480,8 @@ button {
 /* ========= CUSTOMERS ============== */
 
 .customers-section {
-  padding-top: 130px; /* desktop */
-  padding-bottom: 120px; /* desktop */
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 
 .customers-list {

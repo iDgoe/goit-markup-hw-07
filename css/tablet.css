@@ -11,10 +11,15 @@
     display: none;
   }
 
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 123px;
+    margin-left: 110px;
   }
 
   .adress-list {
@@ -25,7 +30,7 @@
 
   .adress {
     display: flex;
-    margin-left: 118px;
+    margin-right: 16px;
   }
 
   .contact-mail {
@@ -81,6 +86,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0px;
+    row-gap: 72px;
+    column-gap: 24;
   }
 
   .strategy-box {
@@ -92,14 +99,6 @@
     justify-content: space-between;
   }
 
-  .strategy-item:nth-child(1) {
-    margin-bottom: 72px;
-  }
-
-  /* .our-team-list:nth-child(1) {
-    margin-bottom: 64px;
-  } */
-
   .our-team-list {
     row-gap: 64px;
     column-gap: 24px;
@@ -108,19 +107,7 @@
   .customers-list {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .customer-item:nth-child(2n + 1) {
-    margin-right: 0px;
-  }
-
-  .customer-item:nth-child(3n + 2) {
-    margin-right: 24px;
-    margin-left: 24px;
-  }
-
-  .customer-item:nth-child(2) {
-    margin-bottom: 72px;
+    column-gap: 24px;
   }
 
   .title-strategy {
@@ -133,6 +120,7 @@
 
   .footer-box {
     margin-left: 108px;
+    margin-right: 0px;
   }
 
   .footer-subscribe {
@@ -156,5 +144,10 @@
 
   .footer-modal-btn {
     margin-top: 0px;
+  }
+
+  .modal {
+    width: 408px;
+    height: 586px;
   }
 }
