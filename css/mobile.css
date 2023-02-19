@@ -107,6 +107,11 @@
     column-gap: 16px;
   }
 
+  .customer-item {
+    width: 190px;
+    height: 88px;
+  }
+
   .customer-logo-icon {
     flex-wrap: wrap;
   }

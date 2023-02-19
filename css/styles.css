@@ -541,6 +541,8 @@ button {
   display: flex;
   margin-bottom: 72px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .portfolio-btn {
@@ -571,10 +573,6 @@ button {
 
 .portfolio-item {
   justify-content: center;
-}
-
-.portfolio-item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .portfolio-list {
