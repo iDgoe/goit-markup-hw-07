@@ -160,7 +160,6 @@
   }
 
   .footer-subscribe {
-    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -264,9 +263,8 @@
     justify-content: space-between;
   }
 
-  /* .modal-form-check-desk {
-    width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-  } */
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
